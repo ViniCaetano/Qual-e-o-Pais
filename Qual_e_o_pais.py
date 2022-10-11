@@ -1,3 +1,5 @@
 import funcoes
 
-funcoes.jogo()
+
+
+funcoes.countdown(funcoes.tempo())
