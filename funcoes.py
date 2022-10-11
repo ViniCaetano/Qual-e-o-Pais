@@ -17,7 +17,7 @@ def jogo():
     populacao = listas.POPULACAO[x]
     capital = listas.CAPITAL[x]
     idioma = listas.IDIOMA [x]
-    lista = [continente, area, populacao, capital, idioma]
+    lista = [continente, area, populacao, idioma, capital]
     pontos = 6
     Palpite = ""
     while senha != Palpite:
