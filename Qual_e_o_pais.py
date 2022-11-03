@@ -1,3 +1,4 @@
 import funcoes
+import time
 
-funcoes.jogo()
+funcoes.temp()
