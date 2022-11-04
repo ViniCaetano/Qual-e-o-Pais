@@ -15,11 +15,14 @@ def temp():
     soma_pontos = 0
     tempo = input("Quanto tempo você quer que tenha o jogo?\n[A] 3 Minutos.\n[B] 5 Minutos.\n[C] 10 Minutos.\n").upper()
     if tempo == "A":
-        tempo = time.time() + 180
+        t1 = 3
+        tempo = time.time() + t1 * 60
     elif tempo == "B":
-        tempo = time.time() + 300 
+        t1 = 5
+        tempo = time.time() + t1 * 60
     elif tempo == "C":
-        tempo = time.time() + 600
+        t1 = 10
+        tempo = time.time() + t1 * 60
     else:
         print('Valor inválido. Digite a opção desejada: A, B ou C.')
         temp()
@@ -27,10 +30,10 @@ def temp():
         soma_pontos += jogo()
         if tempo < time.time():
             if soma_pontos >= 2:
-                print(f'Acabou o tempo. A sua pontuação foi {soma_pontos} pontos.')
+                print(f'Acabou o tempo. A sua pontuação foi {soma_pontos} pontos em {t1} minutos.')
                 break
             else:
-                print(f'Acabou o tempo. A sua pontuação foi {soma_pontos} ponto.')
+                print(f'Acabou o tempo. A sua pontuação foi {soma_pontos} ponto em {t1} minutos.')
                 break
 
 
