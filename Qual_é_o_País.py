@@ -20,6 +20,9 @@ def Menu():
         Para jogar, precione o núemro 1.
         """)
         Menu()
+    else:
+        print("\nDigite '1' para jogar ou '2' para o tutorial.")
+        Menu()
 
 
 #A função "Tirar_Acento" irá padronizar todas os palpites sem acento, independente da maneira que o palpite for escrito"
